@@ -6,7 +6,17 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
 					{
 						"internalType": "string",
 						"name": "_description",
@@ -19,6 +29,86 @@
 					}
 				],
 				"name": "create",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "proposal_history",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "approve",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reject",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "pass",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "total_vote_to_end",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "current_state",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "is_active",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "choice",
+						"type": "uint8"
+					}
+				],
+				"name": "vote",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -52,11 +142,11 @@
 	},
 	"sources": {
 		"contracts/4_ProposalContract.sol": {
-			"keccak256": "0x641d279dfcfdc01422442fe43a7bea28dadcda4bea612d5bedbae0b41e3b452b",
+			"keccak256": "0xa9eff218f90fe19b451709ffb6a5a61a88c5ee49e0dc046cab1e6e4b1ece8b60",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://d0f73927c4e363f693d3419545a67aa358bf8a7ece23ae335e720122198483c6",
-				"dweb:/ipfs/Qmbhp71wRkcTLMcHQqVp3k8PRzNTeh5hS8dvyTuSSTSwZp"
+				"bzz-raw://4a91795ea3f94a6d3c5b8a40aff863061a054408618574f19a87b4a50ae7eb06",
+				"dweb:/ipfs/QmRS1aA9CHGb3NViznF4NLprUsmHKChyTHGQsFkwMP8p8o"
 			]
 		}
 	},
