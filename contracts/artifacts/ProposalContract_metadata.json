@@ -4,7 +4,26 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_total_vote_to_end",
+						"type": "uint256"
+					}
+				],
+				"name": "create",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +52,11 @@
 	},
 	"sources": {
 		"contracts/4_ProposalContract.sol": {
-			"keccak256": "0xadbc6f10543644704e88b33f31f4f0b888b5576845c6b341e81c0135af18021f",
+			"keccak256": "0x641d279dfcfdc01422442fe43a7bea28dadcda4bea612d5bedbae0b41e3b452b",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://2fee971fe432aca7046847d8706d8a19f9635e62f4dc0fc125f0178af73e1f20",
-				"dweb:/ipfs/QmSPY8MLsCpp2MB2LtTKS4Uukw9ki3tvWNE6RkTjNHzoL5"
+				"bzz-raw://d0f73927c4e363f693d3419545a67aa358bf8a7ece23ae335e720122198483c6",
+				"dweb:/ipfs/Qmbhp71wRkcTLMcHQqVp3k8PRzNTeh5hS8dvyTuSSTSwZp"
 			]
 		}
 	},
